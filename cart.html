@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - PKS Sports</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>PKS Sports</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-icons">
+                <a href="cart.html" class="active"><i class="fas fa-shopping-cart"></i></a>
+                <a href="account.html"><i class="fas fa-user"></i></a>
+                <div class="search-container">
+                    <input type="text" placeholder="Search...">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-banner">
+        <div class="container">
+            <h1 class="text-reveal">Your Shopping Cart</h1>
+            <p class="fade-in">Review and manage your selected items</p>
+        </div>
+    </section>
+
+    <section class="cart-section">
+        <div class="container">
+            <div id="cart-empty" class="cart-empty scale-in">
+                <i class="fas fa-shopping-cart"></i>
+                <h2>Your cart is empty</h2>
+                <p>Looks like you haven't added anything to your cart yet.</p>
+                <a href="products.html" class="btn">Start Shopping</a>
+            </div>
+
+            <div id="cart-content" class="cart-content fade-in">
+                <div class="cart-items slide-in-left">
+                    <h2>Cart Items</h2>
+                    <div class="cart-header">
+                        <div class="cart-header-product">Product</div>
+                        <div class="cart-header-price">Price</div>
+                        <div class="cart-header-quantity">Quantity</div>
+                        <div class="cart-header-total">Total</div>
+                        <div class="cart-header-action">Action</div>
+                    </div>
+                    
+                    <div id="cart-items-container">
+                        <table>
+                            <tr>
+                                <td class="product-img">
+                                    <img src="images/Premium Basketall.webp" alt="Professional Basketball">
+                                </td>
+                                <td class="product-name">
+                                    <h3>Premium Basketball</h3>
+                                    <p>Nike</p>
+                                </td>
+                                <td class="product-price">₹4,149</td>
+                                <td class="product-quantity">
+                                    <div class="quantity-selector">
+                                        <button class="decrease">-</button>
+                                        <input type="number" value="1" min="1" max="10">
+                                        <button class="increase">+</button>
+                                    </div>
+                                </td>
+                                <td class="product-total">₹4,149</td>
+                                <td class="product-remove">
+                                    <button><i class="fas fa-trash"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="product-img">
+                                    <img src="images/Tennis Ball Pack (12 Balls).jpg" alt="Tennis Racket Pro">
+                                </td>
+                                <td class="product-name">
+                                    <h3>Tennis Ball Pack (12 Balls)</h3>
+                                    <p>Head</p>
+                                </td>
+                                <td class="product-price">₹2,074</td>
+                                <td class="product-quantity">
+                                    <div class="quantity-selector">
+                                        <button class="decrease">-</button>
+                                        <input type="number" value="1" min="1" max="10">
+                                        <button class="increase">+</button>
+                                    </div>
+                                </td>
+                                <td class="product-total">₹2,074</td>
+                                <td class="product-remove">
+                                    <button><i class="fas fa-trash"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="product-img">
+                                    <img src="images/Football Gloves.jpg" alt="Football Gloves">
+                                </td>
+                                <td class="product-name">
+                                    <h3>Football Gloves</h3>
+                                    <p>Under Armour</p>
+                                </td>
+                                <td class="product-price">₹2,904</td>
+                                <td class="product-quantity">
+                                    <div class="quantity-selector">
+                                        <button class="decrease">-</button>
+                                        <input type="number" value="2" min="1" max="10">
+                                        <button class="increase">+</button>
+                                    </div>
+                                </td>
+                                <td class="product-total">₹5,808</td>
+                                <td class="product-remove">
+                                    <button><i class="fas fa-trash"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="product-img">
+                                    <img src="images/Swimming Goggles Pro.jpg" alt="Swimming Goggles">
+                                </td>
+                                <td class="product-name">
+                                    <h3>Swimming Goggles Pro</h3>
+                                    <p>Speedo</p>
+                                </td>
+                                <td class="product-price">₹2,489</td>
+                                <td class="product-quantity">
+                                    <div class="quantity-selector">
+                                        <button class="decrease">-</button>
+                                        <input type="number" value="1" min="1" max="10">
+                                        <button class="increase">+</button>
+                                    </div>
+                                </td>
+                                <td class="product-total">₹2,489</td>
+                                <td class="product-remove">
+                                    <button><i class="fas fa-trash"></i></button>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="cart-summary slide-in-right">
+                    <h2>Order Summary</h2>
+                    <div class="summary-row">
+                        <span>Subtotal</span>
+                        <span id="cart-subtotal">$0.00</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Shipping</span>
+                        <span id="cart-shipping">$0.00</span>
+                    </div>
+                    <div class="summary-row discount">
+                        <span>Discount</span>
+                        <span id="cart-discount">-$0.00</span>
+                    </div>
+                    <div class="summary-divider"></div>
+                    <div class="summary-row total">
+                        <span>Total</span>
+                        <span id="cart-total">$0.00</span>
+                    </div>
+                    <div class="promo-code">
+                        <input type="text" placeholder="Promo Code">
+                        <button class="btn-apply">Apply</button>
+                    </div>
+                    <button class="btn btn-checkout">Proceed to Checkout</button>
+                    <a href="products.html" class="continue-shopping">
+                        <i class="fas fa-arrow-left"></i> Continue Shopping
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="related-products">
+        <div class="container">
+            <h2 class="section-title fade-in">You Might Also Like</h2>
+            <div class="product-grid stagger-fade-in">
+                <div class="product-card">
+                    <div class="product-badge new">New</div>
+                    <img src="images/Professional Basketball.jpg" alt="Professional Basketball">
+                    <h3>Professional Basketball</h3>
+                    <p class="product-category">Basketball</p>
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>(98)</span>
+                    </div>
+                    <div class="product-details">
+                        <ul>
+                            <li>Official regulation size and weight</li>
+                            <li>Premium composite leather for indoor/outdoor use</li>
+                            <li>Superior grip and ball control</li>
+                            <li>Deep channel design for accurate handling</li>
+                            <li>Inflation retention technology</li>
+                        </ul>
+                    </div>
+                    <div class="product-price">
+                        <span class="price">₹4,159</span>
+                    </div>
+                    <button class="btn-add-cart">Add to Cart</button>
+                    <button class="btn-details">View Details</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="images/Tennis Racket Pro.jpg" alt="Tennis Racket Pro">
+                    <h3>Tennis Racket Pro</h3>
+                    <p class="product-category">Tennis</p>
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>(89)</span>
+                    </div>
+                    <div class="product-details">
+                        <ul>
+                            <li>Carbon fiber frame for lightweight strength</li>
+                            <li>16x19 string pattern for optimal power and spin</li>
+                            <li>100 sq. inch head size for increased sweet spot</li>
+                            <li>Includes vibration dampening technology</li>
+                            <li>Weight: 305g (unstrung)</li>
+                        </ul>
+                    </div>
+                    <div class="product-price">
+                        <span class="price">₹11,999</span>
+                    </div>
+                    <button class="btn-add-cart">Add to Cart</button>
+                    <button class="btn-details">View Details</button>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-badge sale">Sale</div>
+                    <img src="images/Football Gloves.jpg" alt="Football Gloves">
+                    <h3>Football Gloves</h3>
+                    <p class="product-category">Football</p>
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <span>(56)</span>
+                    </div>
+                    <div class="product-details">
+                        <ul>
+                            <li>Tacky silicone palm for superior grip</li>
+                            <li>Breathable mesh back for comfort</li>
+                            <li>Adjustable wrist strap for secure fit</li>
+                            <li>Reinforced stitching for durability</li>
+                            <li>Available in multiple sizes</li>
+                        </ul>
+                    </div>
+                    <div class="product-price">
+                        <span class="price-old">₹3,829</span>
+                        <span class="price">₹2,914</span>
+                    </div>
+                    <button class="btn-add-cart">Add to Cart</button>
+                    <button class="btn-details">View Details</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="images/Swimming Goggles.jpg" alt="Swimming Goggles">
+                    <h3>Swimming Goggles</h3>
+                    <p class="product-category">Swimming</p>
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>(94)</span>
+                    </div>
+                    <div class="product-details">
+                        <ul>
+                            <li>Anti-fog coating for clear vision</li>
+                            <li>UV protection for outdoor swimming</li>
+                            <li>Adjustable silicone strap for comfortable fit</li>
+                            <li>Watertight seal prevents leakage</li>
+                            <li>Includes protective case</li>
+                        </ul>
+                    </div>
+                    <div class="product-price">
+                        <span class="price">₹2,499</span>
+                    </div>
+                    <button class="btn-add-cart">Add to Cart</button>
+                    <button class="btn-details">View Details</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>PKS Sports</h3>
+                    <p>Your ultimate destination for high-quality sports equipment. We provide premium gear for athletes of all levels.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Categories</h3>
+                    <ul>
+                        <li><a href="categories.html#football">Football</a></li>
+                        <li><a href="categories.html#basketball">Basketball</a></li>
+                        <li><a href="categories.html#tennis">Tennis</a></li>
+                        <li><a href="categories.html#swimming">Swimming</a></li>
+                        <li><a href="categories.html#fitness">Fitness</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Sport Street, City, Country</li>
+                        <li><i class="fas fa-phone"></i> +1 234 567 890</li>
+                        <li><i class="fas fa-envelope"></i> info@sportspro.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 PKS Sports. All Rights Reserved.</p>
+                <div class="footer-links">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms & Conditions</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+</html> 

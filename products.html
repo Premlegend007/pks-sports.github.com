@@ -1,0 +1,1338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - PKS Sports</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>PKS Sports</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html" class="active">Products</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-icons">
+                <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+                <a href="account.html"><i class="fas fa-user"></i></a>
+                <div class="search-container">
+                    <input type="text" placeholder="Search...">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-banner">
+        <div class="container">
+            <h1>All Products</h1>
+            <p>Browse our collection of premium sports equipment</p>
+        </div>
+    </section>
+
+    <section class="products-section">
+        <div class="container">
+            <div class="products-container">
+                <div class="filters-sidebar">
+                    <div class="filter-group">
+                        <h3>Categories</h3>
+                        <ul>
+                            <li>
+                                <label>
+                                    <input type="checkbox" name="category" value="football"> Football
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox" name="category" value="basketball"> Basketball
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox" name="category" value="tennis"> Tennis
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox" name="category" value="swimming"> Swimming
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox" name="category" value="fitness"> Fitness
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox" name="category" value="cricket"> Cricket
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox" name="category" value="golf"> Golf
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox" name="category" value="tabletennis"> Table Tennis
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="filter-group">
+                        <h3>Price Range</h3>
+                        <div class="price-range">
+                            <input type="range" min="0" max="75000" value="75000" class="price-slider" id="price-slider">
+                            <div class="price-values">
+                                <span>₹0</span>
+                                <span id="price-value">₹75,000</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="filter-group">
+                        <h3>Brand</h3>
+                        <ul>
+                            <li>
+                                <label>
+                                    <input type="checkbox" name="brand" value="nike"> Nike
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox" name="brand" value="adidas"> Adidas
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox" name="brand" value="puma"> Puma
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox" name="brand" value="under-armour"> Under Armour
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox" name="brand" value="wilson"> Wilson
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox" name="brand" value="reebok"> Reebok
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox" name="brand" value="new-balance"> New Balance
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox" name="brand" value="asics"> ASICS
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox" name="brand" value="fila"> Fila
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox" name="brand" value="babolat"> Babolat
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox" name="brand" value="speedo"> Speedo
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox" name="brand" value="mizuno"> Mizuno
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox" name="brand" value="callaway"> Callaway
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox" name="brand" value="head"> Head
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox" name="brand" value="yonex"> Yonex
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox" name="brand" value="titleist"> Titleist
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="filter-group">
+                        <h3>Rating</h3>
+                        <ul class="rating-filter">
+                            <li>
+                                <label>
+                                    <input type="radio" name="rating" value="4"> 
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <span>& Up</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" name="rating" value="3">
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <span>& Up</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" name="rating" value="2">
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <span>& Up</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <button class="btn-filter">Apply Filters</button>
+                    <button class="btn-clear">Clear All</button>
+                </div>
+
+                <div class="products-content">
+                    <div class="products-header">
+                        <div class="products-count">
+                            <p>Showing <span>24</span> of <span>120</span> products</p>
+                        </div>
+                        <div class="products-sort">
+                            <label for="sort-by">Sort by:</label>
+                            <select id="sort-by">
+                                <option value="popular">Most Popular</option>
+                                <option value="newest">Newest</option>
+                                <option value="price-low">Price: Low to High</option>
+                                <option value="price-high">Price: High to Low</option>
+                                <option value="rating">Highest Rated</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="product-grid">
+                        <!-- Football Products -->
+                        <div class="product-card" data-brand="nike">
+                            <div class="product-badge new">New</div>
+                            <img src="images/Professional Football.jpg" alt="Professional Football">
+                            <h3>Professional Football</h3>
+                            <p class="product-category">Football</p>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>(120)</span>
+                            </div>
+                            <div class="product-details">
+                                <ul>
+                                    <li>Official size and weight</li>
+                                    <li>Premium composite leather for optimal grip</li>
+                                    <li>All-weather performance</li>
+                                    <li>Reinforced air valve for extended air retention</li>
+                                    <li>Suitable for professional matches</li>
+                                </ul>
+                            </div>
+                            <div class="product-price">
+                                <span class="price">₹4,979</span>
+                            </div>
+                            <button class="btn-add-cart">Add to Cart</button>
+                            <button class="btn-details">View Details</button>
+                        </div>
+
+                        <div class="product-card" data-brand="adidas">
+                            <img src="images/Football Cleats.webp" alt="Football Cleats">
+                            <h3>Football Cleats</h3>
+                            <p class="product-category">Football</p>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span>(84)</span>
+                            </div>
+                            <div class="product-details">
+                                <ul>
+                                    <li>Lightweight synthetic upper material</li>
+                                    <li>Enhanced traction on all field types</li>
+                                    <li>Anatomical lacing system for secure fit</li>
+                                    <li>Cushioned insole for comfort</li>
+                                    <li>Available in sizes 7-13</li>
+                                </ul>
+                            </div>
+                            <div class="product-price">
+                                <span class="price">₹7,469</span>
+                            </div>
+                            <button class="btn-add-cart">Add to Cart</button>
+                            <button class="btn-details">View Details</button>
+                        </div>
+
+                        <div class="product-card" data-brand="under-armour">
+                            <div class="product-badge sale">Sale</div>
+                            <img src="images/Football Gloves.jpg" alt="Football Gloves">
+                            <h3>Football Gloves</h3>
+                            <p class="product-category">Football</p>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span>(56)</span>
+                            </div>
+                            <div class="product-details">
+                                <ul>
+                                    <li>HeatGear® fabric keeps hands cool and dry</li>
+                                    <li>GrabTack palm for exceptional grip in all conditions</li>
+                                    <li>Flexible design allowing natural movement</li>
+                                    <li>Machine washable</li>
+                                    <li>Sizes: S, M, L, XL</li>
+                                </ul>
+                            </div>
+                            <div class="product-price">
+                                <span class="price-old">₹3,817</span>
+                                <span class="price">₹2,904</span>
+                            </div>
+                            <button class="btn-add-cart">Add to Cart</button>
+                            <button class="btn-details">View Details</button>
+                        </div>
+
+                        <div class="product-card" data-brand="wilson">
+                            <img src="images/Football Helmet.jpeg" alt="Football Helmet">
+                            <h3>Football Helmet</h3>
+                            <p class="product-category">Football</p>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(42)</span>
+                            </div>
+                            <div class="product-details">
+                                <ul>
+                                    <li>Advanced impact protection system</li>
+                                    <li>Adjustable padding for custom fit</li>
+                                    <li>Ventilated design for airflow</li>
+                                    <li>Meets NOCSAE safety standards</li>
+                                    <li>Face mask included</li>
+                                </ul>
+                            </div>
+                            <div class="product-price">
+                                <span class="price">₹10,789</span>
+                            </div>
+                            <button class="btn-add-cart">Add to Cart</button>
+                            <button class="btn-details">View Details</button>
+                        </div>
+
+                        <!-- Basketball Products -->
+                        <div class="product-card" data-brand="nike">
+                            <div class="product-badge new">New</div>
+                            <img src="images/Premium Basketall.webp" alt="Premium Basketball">
+                            <h3>Premium Basketball</h3>
+                            <p class="product-category">Basketball</p>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(145)</span>
+                            </div>
+                            <div class="product-details">
+                                <ul>
+                                    <li>FIBA & NBA approved regulation size and weight</li>
+                                    <li>Deep channel design for superior ball control</li>
+                                    <li>Moisture-wicking composite leather exterior</li>
+                                    <li>Enhanced grip in all playing conditions</li>
+                                    <li>Available in indoor and outdoor variations</li>
+                                </ul>
+                            </div>
+                            <div class="product-price">
+                                <span class="price">₹4,149</span>
+                            </div>
+                            <button class="btn-add-cart">Add to Cart</button>
+                            <button class="btn-details">View Details</button>
+                        </div>
+
+                        <div class="product-card">
+                            <img src="images/Basketball Shoes.jpg" alt="Basketball Shoes">
+                            <h3>Basketball Shoes</h3>
+                            <p class="product-category">Basketball</p>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span>(76)</span>
+                            </div>
+                            <div class="product-details">
+                                <ul>
+                                    <li>Responsive cushioning for impact protection</li>
+                                    <li>Breathable upper mesh for ventilation</li>
+                                    <li>Enhanced ankle support for stability</li>
+                                    <li>Non-marking rubber outsole with multi-directional traction</li>
+                                    <li>Available in sizes 7-13</li>
+                                </ul>
+                            </div>
+                            <div class="product-price">
+                                <span class="price">₹9,959</span>
+                            </div>
+                            <button class="btn-add-cart">Add to Cart</button>
+                            <button class="btn-details">View Details</button>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="product-badge sale">Sale</div>
+                            <img src="images/Basketball Hoop.jpg" alt="Basketball Hoop">
+                            <h3>Basketball Hoop</h3>
+                            <p class="product-category">Basketball</p>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <i class="far fa-star"></i>
+                                <span>(64)</span>
+                            </div>
+                            <div class="product-details">
+                                <ul>
+                                    <li>Adjustable height from 7.5 to 10 feet</li>
+                                    <li>44-inch shatterproof backboard</li>
+                                    <li>Heavy-duty steel rim with all-weather net</li>
+                                    <li>Large base fills with water or sand for stability</li>
+                                    <li>Weather-resistant materials for outdoor use</li>
+                                </ul>
+                            </div>
+                            <div class="product-price">
+                                <span class="price-old">₹16,599</span>
+                                <span class="price">₹13,279</span>
+                            </div>
+                            <button class="btn-add-cart">Add to Cart</button>
+                            <button class="btn-details">View Details</button>
+                        </div>
+
+                        <div class="product-card">
+                            <img src="images/Basketball Jersey.png" alt="Basketball Jersey">
+                            <h3>Basketball Jersey</h3>
+                            <p class="product-category">Basketball</p>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span>(52)</span>
+                            </div>
+                            <div class="product-details">
+                                <ul>
+                                    <li>Moisture-wicking fabric keeps you dry</li>
+                                    <li>Breathable mesh design for ventilation</li>
+                                    <li>Reinforced stitching for durability</li>
+                                    <li>Available in various team colors</li>
+                                    <li>Sizes: S, M, L, XL, XXL</li>
+                                </ul>
+                            </div>
+                            <div class="product-price">
+                                <span class="price">₹5,809</span>
+                            </div>
+                            <button class="btn-add-cart">Add to Cart</button>
+                            <button class="btn-details">View Details</button>
+                        </div>
+
+                        <!-- Tennis Products -->
+                        <div class="product-card">
+                            <div class="product-badge new">New</div>
+                            <img src="images/Tennis Racket Pro.jpg" alt="Tennis Racket Pro">
+                            <h3>Tennis Racket Pro</h3>
+                            <p class="product-category">Tennis</p>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>(89)</span>
+                            </div>
+                            <div class="product-details">
+                                <ul>
+                                    <li>Carbon fiber frame for lightweight strength</li>
+                                    <li>16x19 string pattern for optimal power and spin</li>
+                                    <li>100 sq. inch head size for increased sweet spot</li>
+                                    <li>Includes vibration dampening technology</li>
+                                    <li>Weight: 305g (unstrung)</li>
+                                </ul>
+                            </div>
+                            <div class="product-price">
+                                <span class="price">₹11,999</span>
+                            </div>
+                            <button class="btn-add-cart">Add to Cart</button>
+                            <button class="btn-details">View Details</button>
+                        </div>
+
+                        <div class="product-card">
+                            <img src="images/Tennis Balls (6 pack).jpg" alt="Tennis Balls (6-Pack)">
+                            <h3>Tennis Balls (6-Pack)</h3>
+                            <p class="product-category">Tennis</p>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span>(42)</span>
+                            </div>
+                            <div class="product-details">
+                                <ul>
+                                    <li>Premium felt for consistent bounce and durability</li>
+                                    <li>Pressurized for optimal performance</li>
+                                    <li>Approved for tournament play</li>
+                                    <li>Extra duty felt for hard court surfaces</li>
+                                    <li>High visibility yellow color</li>
+                                </ul>
+                            </div>
+                            <div class="product-price">
+                                <span class="price">₹1,249</span>
+                            </div>
+                            <button class="btn-add-cart">Add to Cart</button>
+                            <button class="btn-details">View Details</button>
+                        </div>
+
+                        <div class="product-card">
+                            <img src="images/Tennis Shoes.jpg" alt="Tennis Shoes">
+                            <h3>Tennis Shoes</h3>
+                            <p class="product-category">Tennis</p>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span>(67)</span>
+                            </div>
+                            <div class="product-details">
+                                <ul>
+                                    <li>Non-marking herringbone outsole for clay courts</li>
+                                    <li>Cushioned midsole for impact absorption</li>
+                                    <li>Reinforced toe area for durability during slides</li>
+                                    <li>Breathable mesh upper for ventilation</li>
+                                    <li>Available in sizes 7-12</li>
+                                </ul>
+                            </div>
+                            <div class="product-price">
+                                <span class="price">₹8,399</span>
+                            </div>
+                            <button class="btn-add-cart">Add to Cart</button>
+                            <button class="btn-details">View Details</button>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="product-badge sale">Sale</div>
+                            <img src="images/Tennis Net.jpeg" alt="Tennis Net">
+                            <h3>Tennis Net</h3>
+                            <p class="product-category">Tennis</p>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <i class="far fa-star"></i>
+                                <span>(38)</span>
+                            </div>
+                            <div class="product-details">
+                                <ul>
+                                    <li>Regulation size (33 feet length)</li>
+                                    <li>Weather-resistant polyethylene material</li>
+                                    <li>Double-stitched headband for durability</li>
+                                    <li>Quick setup with included steel cables</li>
+                                    <li>Suitable for both indoor and outdoor play</li>
+                                </ul>
+                            </div>
+                            <div class="product-price">
+                                <span class="price-old">₹7,499</span>
+                                <span class="price">₹5,999</span>
+                            </div>
+                            <button class="btn-add-cart">Add to Cart</button>
+                            <button class="btn-details">View Details</button>
+                        </div>
+
+                        <!-- New Equipment Products -->
+                        <div class="product-card" data-brand="babolat">
+                            <div class="product-badge sale">Sale</div>
+                            <img src="images/Carbon Fiber Tennis Racket.jpg" alt="Carbon Fiber Tennis Racket">
+                            <h3>Carbon Fiber Tennis Racket</h3>
+                            <p class="product-category">Tennis</p>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>(92)</span>
+                            </div>
+                            <div class="product-details">
+                                <ul>
+                                    <li>Lightweight 100% carbon fiber frame (285g)</li>
+                                    <li>98 sq. inch head size for optimal power and control</li>
+                                    <li>16x19 string pattern</li>
+                                    <li>Vibration dampening technology</li>
+                                    <li>Includes protective cover</li>
+                                </ul>
+                            </div>
+                            <div class="product-price">
+                                <span class="price-old">₹16,599</span>
+                                <span class="price">₹13,279</span>
+                            </div>
+                            <button class="btn-add-cart">Add to Cart</button>
+                            <button class="btn-details">View Details</button>
+                        </div>
+
+                        <div class="product-card" data-brand="speedo">
+                            <img src="images/Swimming Goggles Pro.jpg" alt="Swimming Goggles Pro">
+                            <h3>Swimming Goggles Pro</h3>
+                            <p class="product-category">Swimming</p>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span>(78)</span>
+                            </div>
+                            <div class="product-details">
+                                <ul>
+                                    <li>Hydrodynamic design for reduced drag</li>
+                                    <li>Anti-fog coating for clear vision</li>
+                                    <li>UV protection lenses</li>
+                                    <li>Adjustable silicone straps for secure fit</li>
+                                    <li>Includes protective case and extra nose bridge</li>
+                                </ul>
+                            </div>
+                            <div class="product-price">
+                                <span class="price">₹2,489</span>
+                            </div>
+                            <button class="btn-add-cart">Add to Cart</button>
+                            <button class="btn-details">View Details</button>
+                        </div>
+
+                        <div class="product-card" data-brand="reebok">
+                            <div class="product-badge new">New</div>
+                            <img src="images/Adjustable Dumbbell Set.jpg" alt="Adjustable Dumbbell Set">
+                            <h3>Adjustable Dumbbell Set</h3>
+                            <p class="product-category">Fitness</p>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(124)</span>
+                            </div>
+                            <div class="product-details">
+                                <ul>
+                                    <li>Adjustable from 5 to 52.5 pounds per dumbbell</li>
+                                    <li>Quick adjustment dial system</li>
+                                    <li>Space-saving design replaces 15 pairs of dumbbells</li>
+                                    <li>Durable cast iron plates with knurled handles</li>
+                                    <li>Includes storage trays</li>
+                                </ul>
+                            </div>
+                            <div class="product-price">
+                                <span class="price">₹24,899</span>
+                            </div>
+                            <button class="btn-add-cart">Add to Cart</button>
+                            <button class="btn-details">View Details</button>
+                        </div>
+
+                        <div class="product-card" data-brand="adidas">
+                            <img src="images/Soccer Training Cones (Set of 20).jpeg" alt="Soccer Training Cones">
+                            <h3>Soccer Training Cones (Set of 20)</h3>
+                            <p class="product-category">Football</p>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <i class="far fa-star"></i>
+                                <span>(46)</span>
+                            </div>
+                            <div class="product-details">
+                                <ul>
+                                    <li>Set of 20 durable plastic training cones</li>
+                                    <li>Bright orange color for high visibility</li>
+                                    <li>Flexible design resists breaking and cracking</li>
+                                    <li>Stackable for easy storage and transport</li>
+                                    <li>Perfect for drills, field marking and practice setup</li>
+                                </ul>
+                            </div>
+                            <div class="product-price">
+                                <span class="price">₹1,659</span>
+                            </div>
+                            <button class="btn-add-cart">Add to Cart</button>
+                            <button class="btn-details">View Details</button>
+                        </div>
+
+                        <div class="product-card" data-brand="wilson">
+                            <div class="product-badge sale">Sale</div>
+                            <img src="images/Portable Basketball Hoop System.jpg" alt="Basketball Hoop System">
+                            <h3>Portable Basketball Hoop System</h3>
+                            <p class="product-category">Basketball</p>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span>(67)</span>
+                            </div>
+                            <div class="product-details">
+                                <ul>
+                                    <li>54" shatterproof polycarbonate backboard</li>
+                                    <li>Height adjustable from 7.5' to 10' in 6" increments</li>
+                                    <li>Heavy-duty 35-gallon base for stability</li>
+                                    <li>All-weather resistant materials and powder-coated steel pole</li>
+                                    <li>Pro-style breakaway rim with all-weather net</li>
+                                </ul>
+                            </div>
+                            <div class="product-price">
+                                <span class="price-old">₹29,049</span>
+                                <span class="price">₹23,239</span>
+                            </div>
+                            <button class="btn-add-cart">Add to Cart</button>
+                            <button class="btn-details">View Details</button>
+                        </div>
+
+                        <div class="product-card" data-brand="head">
+                            <img src="images/Tennis Ball Pack (12 Balls).jpg" alt="Tennis Ball Pack">
+                            <h3>Tennis Ball Pack (12 Balls)</h3>
+                            <p class="product-category">Tennis</p>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span>(52)</span>
+                            </div>
+                            <div class="product-details">
+                                <ul>
+                                    <li>ITF approved competition tennis balls</li>
+                                    <li>Extra-duty felt for extended durability on hard courts</li>
+                                    <li>Pressurized core for consistent bounce and performance</li>
+                                    <li>Pack of 12 balls (4 tubes of 3 balls each)</li>
+                                    <li>Ideal for recreational and competitive play</li>
+                                </ul>
+                            </div>
+                            <div class="product-price">
+                                <span class="price">₹2,074</span>
+                            </div>
+                            <button class="btn-add-cart">Add to Cart</button>
+                            <button class="btn-details">View Details</button>
+                        </div>
+
+                        <div class="product-card" data-brand="speedo">
+                            <img src="images/Competition Swimsuit.jpg" alt="Competition Swimsuit">
+                            <h3>Competition Swimsuit</h3>
+                            <p class="product-category">Swimming</p>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>(88)</span>
+                            </div>
+                            <div class="product-details">
+                                <ul>
+                                    <li>FINA approved competition swimsuit</li>
+                                    <li>Hydrophobic fabric reduces drag and water absorption</li>
+                                    <li>Chlorine-resistant material for extended lifespan</li>
+                                    <li>Compression fit for improved muscle support and performance</li>
+                                    <li>Available in men's and women's styles and sizes</li>
+                                </ul>
+                            </div>
+                            <div class="product-price">
+                                <span class="price">₹6,639</span>
+                            </div>
+                            <button class="btn-add-cart">Add to Cart</button>
+                            <button class="btn-details">View Details</button>
+                        </div>
+
+                        <div class="product-card" data-brand="puma">
+                            <div class="product-badge new">New</div>
+                            <img src="images/Yoga Mat Premium.jpg" alt="Yoga Mat Premium">
+                            <h3>Yoga Mat Premium</h3>
+                            <p class="product-category">Fitness</p>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(105)</span>
+                            </div>
+                            <div class="product-details">
+                                <ul>
+                                    <li>6mm thick cushioned non-slip surface</li>
+                                    <li>Eco-friendly TPE material, free of PVC, latex and phthalates</li>
+                                    <li>Double-sided textured surface for superior grip</li>
+                                    <li>Includes carrying strap for easy transport</li>
+                                    <li>Moisture-resistant and easy to clean</li>
+                                </ul>
+                            </div>
+                            <div class="product-price">
+                                <span class="price">₹3,817</span>
+                            </div>
+                            <button class="btn-add-cart">Add to Cart</button>
+                            <button class="btn-details">View Details</button>
+                        </div>
+
+                        <div class="product-card" data-brand="new-balance">
+                            <img src="images/Cricket Bat Professional.webp" alt="Cricket Bat Pro">
+                            <h3>Cricket Bat Professional</h3>
+                            <p class="product-category">Cricket</p>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span>(63)</span>
+                            </div>
+                            <div class="product-details">
+                                <ul>
+                                    <li>Grade 1 English willow for superior performance</li>
+                                    <li>Mid-to-low sweet spot for powerful strokes</li>
+                                    <li>Pre-knocked in and ready to play</li>
+                                    <li>Premium cane handle with anti-shock grip</li>
+                                    <li>Includes protective bat cover</li>
+                                </ul>
+                            </div>
+                            <div class="product-price">
+                                <span class="price">₹10,789</span>
+                            </div>
+                            <button class="btn-add-cart">Add to Cart</button>
+                            <button class="btn-details">View Details</button>
+                        </div>
+
+                        <div class="product-card" data-brand="callaway">
+                            <div class="product-badge sale">Sale</div>
+                            <img src="images/Complete Golf Club Set.jpg" alt="Golf Club Set">
+                            <h3>Complete Golf Club Set</h3>
+                            <p class="product-category">Golf</p>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>(97)</span>
+                            </div>
+                            <div class="product-details">
+                                <ul>
+                                    <li>Complete 14-piece club set with titanium driver</li>
+                                    <li>Includes 3 & 5 fairway woods, 4-9 irons, PW, SW</li>
+                                    <li>Precision-milled putter with alignment guide</li>
+                                    <li>Premium stand bag with 7 zippered pockets</li>
+                                    <li>Available for right and left-handed players</li>
+                                </ul>
+                            </div>
+                            <div class="product-price">
+                                <span class="price-old">₹74,699</span>
+                                <span class="price">₹58,099</span>
+                            </div>
+                            <button class="btn-add-cart">Add to Cart</button>
+                            <button class="btn-details">View Details</button>
+                        </div>
+
+                        <div class="product-card" data-brand="yonex">
+                            <img src="images/Professional Table Tennis Paddle.jpeg" alt="Table Tennis Paddle">
+                            <h3>Professional Table Tennis Paddle</h3>
+                            <p class="product-category">Table Tennis</p>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span>(71)</span>
+                            </div>
+                            <div class="product-details">
+                                <ul>
+                                    <li>ITTF approved 5-ply blade with carbon layers</li>
+                                    <li>Premium Japanese rubber for maximum spin</li>
+                                    <li>Ergonomic flared handle for comfortable grip</li>
+                                    <li>Speed: 9/10, Spin: 9/10, Control: 8/10</li>
+                                    <li>Includes protective case and replacement rubbers</li>
+                                </ul>
+                            </div>
+                            <div class="product-price">
+                                <span class="price">₹4,979</span>
+                            </div>
+                            <button class="btn-add-cart">Add to Cart</button>
+                            <button class="btn-details">View Details</button>
+                        </div>
+
+                        <div class="product-card">
+                            <img src="images/Swimming Goggles.jpg" alt="Swimming Goggles">
+                            <h3>Swimming Goggles</h3>
+                            <p class="product-category">Swimming</p>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>(94)</span>
+                            </div>
+                            <div class="product-details">
+                                <ul>
+                                    <li>Anti-fog coating for clear vision</li>
+                                    <li>UV protection for outdoor swimming</li>
+                                    <li>Adjustable silicone strap for comfortable fit</li>
+                                    <li>Watertight seal prevents leakage</li>
+                                    <li>Includes protective case</li>
+                                </ul>
+                            </div>
+                            <div class="product-price">
+                                <span class="price">₹2,499</span>
+                            </div>
+                            <button class="btn-add-cart">Add to Cart</button>
+                            <button class="btn-details">View Details</button>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="product-badge sale">Sale</div>
+                            <img src="images/Swim Cap.jpg" alt="Swim Cap">
+                            <h3>Swim Cap</h3>
+                            <p class="product-category">Swimming</p>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span>(61)</span>
+                            </div>
+                            <div class="product-details">
+                                <ul>
+                                    <li>Premium silicone material for durability</li>
+                                    <li>Ergonomic design for reduced drag in water</li>
+                                    <li>Excellent hair protection from chlorine</li>
+                                    <li>Tear-resistant and non-slip</li>
+                                    <li>Available in multiple colors</li>
+                                </ul>
+                            </div>
+                            <div class="product-price">
+                                <span class="price-old">₹899</span>
+                                <span class="price">₹699</span>
+                            </div>
+                            <button class="btn-add-cart">Add to Cart</button>
+                            <button class="btn-details">View Details</button>
+                        </div>
+
+                        <div class="product-card">
+                            <img src="images/Swimming Fins.jpg" alt="Swimming Fins">
+                            <h3>Swimming Fins</h3>
+                            <p class="product-category">Swimming</p>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <i class="far fa-star"></i>
+                                <span>(53)</span>
+                            </div>
+                            <div class="product-details">
+                                <ul>
+                                    <li>Short blade design for improved kick technique</li>
+                                    <li>Soft silicone foot pocket for comfort</li>
+                                    <li>Reinforced heel for durability</li>
+                                    <li>Hydrodynamic design for reduced resistance</li>
+                                    <li>Available in sizes S-XL</li>
+                                </ul>
+                            </div>
+                            <div class="product-price">
+                                <span class="price">₹3,299</span>
+                            </div>
+                            <button class="btn-add-cart">Add to Cart</button>
+                            <button class="btn-details">View Details</button>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="product-badge new">New</div>
+                            <img src="images/Swimming Kickboard.jpg" alt="Swimming Kickboard">
+                            <h3>Swimming Kickboard</h3>
+                            <p class="product-category">Swimming</p>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span>(39)</span>
+                            </div>
+                            <div class="product-details">
+                                <ul>
+                                    <li>EVA foam construction for buoyancy</li>
+                                    <li>Hydrodynamic design reduces water resistance</li>
+                                    <li>Ergonomic hand grips for secure hold</li>
+                                    <li>Durable and chlorine-resistant material</li>
+                                    <li>Perfect for training and rehabilitation</li>
+                                </ul>
+                            </div>
+                            <div class="product-price">
+                                <span class="price">₹1,499</span>
+                            </div>
+                            <button class="btn-add-cart">Add to Cart</button>
+                            <button class="btn-details">View Details</button>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="product-badge new">New</div>
+                            <img src="images/Cricket Bat.jpg" alt="Cricket Bat">
+                            <h3>Cricket Bat</h3>
+                            <p class="product-category">Cricket</p>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>(82)</span>
+                            </div>
+                            <div class="product-details">
+                                <ul>
+                                    <li>Premium Kashmir willow construction</li>
+                                    <li>Pre-pressed for optimal performance</li>
+                                    <li>Ergonomic handle with anti-shock grip</li>
+                                    <li>Reinforced edges for durability</li>
+                                    <li>Weight: 1.2kg (±50g)</li>
+                                </ul>
+                            </div>
+                            <div class="product-price">
+                                <span class="price">₹8,499</span>
+                            </div>
+                            <button class="btn-add-cart">Add to Cart</button>
+                            <button class="btn-details">View Details</button>
+                        </div>
+
+                        <div class="product-card">
+                            <img src="images/Cricket Ball.jpg" alt="Cricket Ball">
+                            <h3>Cricket Ball</h3>
+                            <p class="product-category">Cricket</p>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span>(59)</span>
+                            </div>
+                            <div class="product-details">
+                                <ul>
+                                    <li>Regulation weight (156g) and size</li>
+                                    <li>4-piece construction with quality leather</li>
+                                    <li>Hand-stitched with 6 rows of stitching</li>
+                                    <li>Suitable for matches and practice</li>
+                                    <li>Polished finish for enhanced durability</li>
+                                </ul>
+                            </div>
+                            <div class="product-price">
+                                <span class="price">₹1,199</span>
+                            </div>
+                            <button class="btn-add-cart">Add to Cart</button>
+                            <button class="btn-details">View Details</button>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="product-badge sale">Sale</div>
+                            <img src="images/Cricket Helmet.jpg" alt="Cricket Helmet">
+                            <h3>Cricket Helmet</h3>
+                            <p class="product-category">Cricket</p>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <i class="far fa-star"></i>
+                                <span>(47)</span>
+                            </div>
+                            <div class="product-details">
+                                <ul>
+                                    <li>Steel grille for maximum face protection</li>
+                                    <li>Impact-resistant shell with ventilation</li>
+                                    <li>Adjustable chin strap for secure fit</li>
+                                    <li>Moisture-wicking inner padding</li>
+                                    <li>Available in sizes S-XL</li>
+                                </ul>
+                            </div>
+                            <div class="product-price">
+                                <span class="price-old">₹5,299</span>
+                                <span class="price">₹3,999</span>
+                            </div>
+                            <button class="btn-add-cart">Add to Cart</button>
+                            <button class="btn-details">View Details</button>
+                        </div>
+
+                        <div class="product-card">
+                            <img src="images/Cricket Gloves.jpg" alt="Cricket Gloves">
+                            <h3>Cricket Gloves</h3>
+                            <p class="product-category">Cricket</p>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span>(63)</span>
+                            </div>
+                            <div class="product-details">
+                                <ul>
+                                    <li>High-density foam padding for impact protection</li>
+                                    <li>Reinforced palm with anti-slip texture</li>
+                                    <li>Pre-curved design for enhanced grip</li>
+                                    <li>Ventilated back for improved airflow</li>
+                                    <li>Adjustable wrist strap for secure fit</li>
+                                </ul>
+                            </div>
+                            <div class="product-price">
+                                <span class="price">₹2,599</span>
+                            </div>
+                            <button class="btn-add-cart">Add to Cart</button>
+                            <button class="btn-details">View Details</button>
+                        </div>
+
+                        <div class="product-card">
+                            <img src="images/Golf Balls.jpg" alt="Golf Balls">
+                            <h3>Golf Balls (12-Pack)</h3>
+                            <p class="product-category">Golf</p>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span>(72)</span>
+                            </div>
+                            <div class="product-details">
+                                <ul>
+                                    <li>3-piece construction for optimal distance</li>
+                                    <li>Soft urethane cover for enhanced control</li>
+                                    <li>Aerodynamic dimple pattern for reduced drag</li>
+                                    <li>Consistent ball flight in all conditions</li>
+                                    <li>Durable and long-lasting performance</li>
+                                </ul>
+                            </div>
+                            <div class="product-price">
+                                <span class="price">₹3,299</span>
+                            </div>
+                            <button class="btn-add-cart">Add to Cart</button>
+                            <button class="btn-details">View Details</button>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="product-badge sale">Sale</div>
+                            <img src="images/Golf Gloves.jpg" alt="Golf Gloves">
+                            <h3>Golf Gloves</h3>
+                            <p class="product-category">Golf</p>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <i class="far fa-star"></i>
+                                <span>(48)</span>
+                            </div>
+                            <div class="product-details">
+                                <ul>
+                                    <li>Premium Cabretta leather for superior feel</li>
+                                    <li>Perforations for enhanced breathability</li>
+                                    <li>Reinforced palm for improved durability</li>
+                                    <li>Precision fit with adjustable closure</li>
+                                    <li>Available in various sizes</li>
+                                </ul>
+                            </div>
+                            <div class="product-price">
+                                <span class="price-old">₹1,899</span>
+                                <span class="price">₹1,499</span>
+                            </div>
+                            <button class="btn-add-cart">Add to Cart</button>
+                            <button class="btn-details">View Details</button>
+                        </div>
+
+                        <div class="product-card">
+                            <img src="images/Golf Clubs.jpg" alt="Golf Clubs">
+                            <h3>Golf Driver</h3>
+                            <p class="product-category">Golf</p>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(86)</span>
+                            </div>
+                            <div class="product-details">
+                                <ul>
+                                    <li>460cc titanium head for maximum forgiveness</li>
+                                    <li>Adjustable loft settings (9°-12°)</li>
+                                    <li>Low center of gravity for optimal launch</li>
+                                    <li>Premium graphite shaft for increased swing speed</li>
+                                    <li>Includes headcover for protection</li>
+                                </ul>
+                            </div>
+                            <div class="product-price">
+                                <span class="price">₹24,999</span>
+                            </div>
+                            <button class="btn-add-cart">Add to Cart</button>
+                            <button class="btn-details">View Details</button>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="product-badge new">New</div>
+                            <img src="images/Complete Golf Club Set.jpg" alt="Complete Golf Club Set">
+                            <h3>Complete Golf Club Set</h3>
+                            <p class="product-category">Golf</p>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>(91)</span>
+                            </div>
+                            <div class="product-details">
+                                <ul>
+                                    <li>Full set includes driver, fairway woods, hybrids, irons, wedges, and putter</li>
+                                    <li>Premium steel shafts for irons and graphite for woods</li>
+                                    <li>Oversized clubheads for improved forgiveness</li>
+                                    <li>Includes deluxe stand bag with multiple pockets</li>
+                                    <li>Perfect for beginners and intermediate players</li>
+                                </ul>
+                            </div>
+                            <div class="product-price">
+                                <span class="price">₹49,999</span>
+                            </div>
+                            <button class="btn-add-cart">Add to Cart</button>
+                            <button class="btn-details">View Details</button>
+                        </div>
+                    </div>
+
+                    <div class="pagination">
+                        <a href="#" class="active">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#">5</a>
+                        <a href="#" class="next">Next <i class="fas fa-chevron-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>PKS Sports</h3>
+                    <p>Your ultimate destination for high-quality sports equipment. We provide premium gear for athletes of all levels.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Categories</h3>
+                    <ul>
+                        <li><a href="categories.html#football">Football</a></li>
+                        <li><a href="categories.html#basketball">Basketball</a></li>
+                        <li><a href="categories.html#tennis">Tennis</a></li>
+                        <li><a href="categories.html#swimming">Swimming</a></li>
+                        <li><a href="categories.html#fitness">Fitness</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Sport Street, City, Country</li>
+                        <li><i class="fas fa-phone"></i> +1 234 567 890</li>
+                        <li><i class="fas fa-envelope"></i> info@sportspro.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 PKS Sports. All Rights Reserved.</p>
+                <div class="footer-links">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms & Conditions</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html> 
